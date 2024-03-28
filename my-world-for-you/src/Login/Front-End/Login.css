@@ -1,0 +1,27 @@
+.login_main_section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.login_main_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 300px;
+    background-color: cadetblue;
+}
+
+.login_main_div input {
+    margin-bottom: 10px;
+    height: 20px;
+    width: 90%;
+}
+
+.login_main_div button {
+    margin-top: 20px;
+    width: 70%;
+    height: 35px;
+}
