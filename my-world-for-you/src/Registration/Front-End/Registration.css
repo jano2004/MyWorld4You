@@ -1,25 +1,26 @@
-.login_main_section {
+.register_main_section {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 800px;
-    background: linear-gradient(135deg, #ffffff, #343434);
+    background: #01FFC7;
+    background: linear-gradient(135deg, #01FFC7, #FF01BC);
     overflow-y: hidden;
 }
 
-.login_main_div {
+.register_main_div {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 300px;
+    height: 500px;
     width: 340px;
     border: 2px solid #343434;
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 60%);
 }
 
-.main_login_input_container {
+.main_register_input_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +28,7 @@
     width: 90%;
 }
 
-.main_login_input_container input {
+.main_register_input_container input {
     height: 40px;
     border: 2px solid #343434;
     padding: 10px;
@@ -39,12 +40,12 @@
     padding-left: 10px;
 }
 
-.main_login_input_container input:focus {
+.main_register_input_container input:focus {
     border-color: #9d9d9d;
     outline: none;
 }
 
-.main_login_button_container {
+.main_register_button_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,7 +53,7 @@
     width: 90%;
 }
 
-.main_login_button_container button {
+.main_register_button_container button {
     width: 90%;
     height: 40px;
     margin-bottom: 10px;
@@ -65,7 +66,7 @@
     transition: all 0.2s ease-in-out;
 }
 
-.main_login_button_container button:hover {
+.main_register_button_container button:hover {
     background-color: transparent;
     border: 2px solid black;
     color: #343434;

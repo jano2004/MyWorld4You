@@ -1,0 +1,76 @@
+.main_about_me_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.main_about_me_div {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 80%;
+}
+
+.main_about_me_div_text_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+}
+
+.main_about_me_div_text_section_header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+}
+
+.main_about_me_div_text_section_header p {
+    font-family: Impact, fantasy;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #343434;
+}
+
+.main_about_me_div_text_section_second_header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 7%;
+    width: 100%;
+}
+
+.main_about_me_div_text_section_second_header p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #343434;
+}
+
+.main_about_me_div_text_section_text {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 30%;
+    width: 100%;
+}
+
+.main_about_me_div_text_section_text p {
+    font-size: 1.5rem;
+    color: #343434;
+}
+
+.main_about_me_div_image_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+}

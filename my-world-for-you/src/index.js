@@ -1,38 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Mainpage from "./Mainpage/Main/Mainpage";
 import Login from './Login/Front-End/Login';
+import Registrationpage from './Registration/Front-End/Registration';
 import reportWebVitals from './reportWebVitals';
-import { auth } from './Database/Connection/firebaseConfig';
-import Logout from "./Login/Logout/Logout";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-function App() {
-    const [user, setUser] = useState(null);
-
-    useEffect(() => {
-        const unsubscribe = auth.onAuthStateChanged((currentUser) => {
-            if (currentUser) {
-                console.log(currentUser.email, currentUser.uid);
-                setUser(currentUser);
-            } else {
-                console.error('No user logged in:', 404, 'No user found!');
-                setUser(null);
-            }
-        });
-
-        // Cleanup beim Unmount
-        return () => unsubscribe();
-    }, []);
-
-    return (
-        <React.StrictMode>
-            {user ? <Logout /> : <Login />}
-        </React.StrictMode>
-    );
-}
-
-root.render(<App />);
+root.render(
+    <React.StrictMode>
+        <Router>
+            <Routes>
+                <Route path='/mainpage' element={<Mainpage />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Registrationpage />} />
+            </Routes>
+        </Router>
+    </React.StrictMode>
+);
 
 reportWebVitals();

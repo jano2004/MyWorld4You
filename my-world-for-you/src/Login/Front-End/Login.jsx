@@ -1,44 +1,60 @@
-import React, { useState } from 'react'; // Import useState for managing email and password inputs
+import React, { useState } from 'react';
 import './Login.css';
-import { loginUser } from '../Back-End/DatabaseConnection.js';
+import { loginUser } from '../../Database/Login/LoginService';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
-    const [email, setEmail] = useState(''); // Use useState to manage email
-    const [password, setPassword] = useState(''); // Use useState to manage password
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
-    // Function to handle login on button click
-    const handleLogin = () => {
-        loginUser(email, password);
+    const handleLogin = async () => {
+        try {
+            await loginUser(email, password);
+            console.log('Login successful');
+            navigate('/mainpage');
+        } catch (error) {
+            console.error('Login failed:', error);
+        }
+    };
+
+    const loadRegistration = () => {
+        navigate('/register');
     };
 
     return (
-        <section className="login_main_section">
-            <div className="login_main_div">
-                <input
-                    className="username_input"
-                    id="usernameInput"
-                    type="text"
-                    placeholder="Username"
-                    onChange={(e) => setEmail(e.target.value)} // Set email state on change
-                />
-                <input
-                    className="password_input"
-                    id="passwordInput"
-                    type="password" // Change type to password for security
-                    placeholder="Password"
-                    onChange={(e) => setPassword(e.target.value)} // Set password state on change
-                />
-                <button
-                    className="login_button"
-                    id="loginButton"
-                    type="button" // Change type to button to prevent form submission
-                    onClick={handleLogin} // Call handleLogin when button is clicked
-                >
-                    LOGIN
-                </button>
-            </div>
+        <section className='login_main_section'>
+            <div className='login_main_div'>
+                <div className='main_login_input_container'>
+                    <input
+                        className='username_input'
+                        id='usernameInput'
+                        type='text'
+                        placeholder='E-MAIL'
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <input
+                        className='password_input'
+                        id='passwordInput'
+                        type='password'
+                        placeholder='PASSWORT'
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                </div>
+                <div className='main_login_button_container'>
+                    <button
+                        className='login_button'
+                        id='loginButton'
+                        type='button'
+                        onClick={handleLogin}
+                        >
+                        LOGIN
+                    </button>
+                        <button onClick={loadRegistration}>JETZT REGISTRIEREN</button>
+                    </div>
+                </div>
         </section>
-    );
+);
 }
 
 export default Login;
