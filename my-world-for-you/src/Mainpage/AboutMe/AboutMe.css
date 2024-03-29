@@ -70,7 +70,13 @@
 .main_about_me_div_image_section {
     display: flex;
     flex-direction: row;
+    justify-content: end;
     align-items: center;
     height: 100%;
     width: 40%;
+}
+
+.main_about_me_div_image_section img {
+    width: auto;
+    height: 80%;
 }

@@ -1,4 +1,5 @@
 import './AboutMe.css'
+import aboutMeImage from '../../Images/aboutMe_image.png'
 
 function AboutMe() {
     return (
@@ -17,7 +18,7 @@ function AboutMe() {
                     </div>
                 </div>
                 <div className='main_about_me_div_image_section'>
-
+                    <img src={aboutMeImage}/>
                 </div>
             </div>
         </section>
