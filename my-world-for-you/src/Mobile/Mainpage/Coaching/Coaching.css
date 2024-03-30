@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.mobile_main_coaching_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+}
+
+
+
+
+
+.mobile_coaching_transformation {
+    height: 32%;
+    width: 80%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    color: #E4E4E4;
+}
+
+.mobile_coaching_transformation_header {
+    display: flex;
+    flex-direction: inherit;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: 5px;
+}
+
+.mobile_coaching_transformation_header p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.mobile_coaching_transformation_text {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    width: 50%;
+    height: 60%;
+    border-bottom-left-radius: 20px;
+}
+
+.mobile_coaching_transformation_text p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+
+
+
+
+.mobile_coaching_meditation {
+    height: 25%;
+    width: 80%;
+    border-radius: 20px;
+    color: #E4E4E4;
+    background-size: cover;
+    background-position: center;
+}
+
+.mobile_coaching_meditation_header {
+    display: flex;
+    flex-direction: inherit;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: 5px;
+}
+
+.mobile_coaching_meditation_header p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.mobile_coaching_meditation_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
+    width: 50%;
+    height: 60%;
+    border-bottom-left-radius: 20px;
+}
+
+.mobile_coaching_meditation_text p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+
+
+
+
+.mobile_coaching_travel {
+    height: 25%;
+    width: 80%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    color: #E4E4E4;
+}
+
+.mobile_coaching_travel_header {
+    display: flex;
+    flex-direction: inherit;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: 5px;
+}
+
+.mobile_coaching_travel_header p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.mobile_coaching_travel_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
+    width: 50%;
+    height: 60%;
+    border-bottom-left-radius: 20px;
+}
+
+.mobile_coaching_travel_text p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 15px;
+}

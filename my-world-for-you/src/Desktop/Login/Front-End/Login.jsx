@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css';
-import { loginUser } from '../../Database/Login/LoginService';
+import { loginUser } from '../../../Database/Login/LoginService';
 import { useNavigate } from 'react-router-dom';
 
 function Login() {
@@ -12,7 +12,7 @@ function Login() {
         try {
             await loginUser(email, password);
             console.log('Login successful');
-            navigate('/mainpage');
+            navigate('/desktop-mainpage');
         } catch (error) {
             console.error('Login failed:', error);
         }

@@ -1,0 +1,15 @@
+.mobile_body_top_main_section {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-size: 1000px;
+    background-position: center;
+}
+
+.mobile_body_top_main_section img {
+    height: 100%;
+    width: auto;
+}
+

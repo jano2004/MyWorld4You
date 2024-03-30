@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Registration.css';
 import {useNavigate} from "react-router-dom";
-import {registerUser} from "../../Database/Registration/RegistrationService";
+import {registerUser} from "../../../Database/Registration/RegistrationService";
 
 function Registration() {
 

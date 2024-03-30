@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Header.css';
-import { logoutUser } from '../../Database/Logout/LogoutService';
-import { auth } from '../../Database/Connection/FirebaseConfig'; // Importieren Sie auth von FirebaseConfig
-import { getFirstnameOfCurrentUser } from '../../Database/Datafetch/DatafetchService';
+import { logoutUser } from '../../../Database/Logout/LogoutService';
+import { auth } from '../../../Database/Connection/FirebaseConfig'; // Importieren Sie auth von FirebaseConfig
+import { getFirstnameOfCurrentUser } from '../../../Database/Datafetch/DatafetchService';
 
 function Header() {
     const navigate = useNavigate();
@@ -34,7 +34,7 @@ function Header() {
         try {
             await logoutUser();
             setIsLoggedIn(false);
-            navigate('/mainpage'); // Nach dem Logout navigieren
+            navigate('/desktop-mainpage');
         } catch (error) {
             console.log('Failed to log out!');
         }

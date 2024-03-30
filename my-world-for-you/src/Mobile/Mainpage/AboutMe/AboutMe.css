@@ -1,0 +1,32 @@
+.mobile_main_about_me_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+}
+
+.mobile_main_about_me_second_header {
+    width: 80%;
+    height: 40%;
+    text-align: left;
+    font-weight: normal;
+}
+
+.mobile_main_about_me_second_header p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.mobile_main_about_me_text {
+    width: 80%;
+    height: 60%;
+    text-align: left;
+    font-weight: normal;
+}
+
+.mobile_main_about_me_text p {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
